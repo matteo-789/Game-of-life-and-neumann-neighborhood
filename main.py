@@ -22,11 +22,11 @@ def main():
     generation = 0
     screen.fill((255, 255, 255))
 
-    set_neumann_neighb(screen, cells, cellSize, larg_arr, long_arr)
-    #set_upgol(screen, cells, cellSize, larg_arr, long_arr)
+    #set_neumann_neighb(screen, cells, cellSize, larg_arr, long_arr)
+    set_upgol(screen, cells, cellSize, larg_arr, long_arr)
     while not done:
-        #cells = apply_rule_gol(screen, cells, cellSize, larg_arr, long_arr)
-        cells = apply_rule_neumann(screen, cells, cellSize, larg_arr, long_arr)
+        cells = apply_rule_gol(screen, cells, cellSize, larg_arr, long_arr)
+        #cells = apply_rule_neumann(screen, cells, cellSize, larg_arr, long_arr)
 
         pygame.display.update()
         generation += 1
