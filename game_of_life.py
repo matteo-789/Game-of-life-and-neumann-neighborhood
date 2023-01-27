@@ -4,9 +4,9 @@ import numpy as np
 
 rng = default_rng()
 
-def set_upgol(screen, cells, cellSize, larg_arr, long_arr):
+def set_upgol(screen, cells, cellSize, larg_arr, long_arr, x):
     for gene in range(long_arr):
-        for _ in range(50):
+        for _ in range(x):
             nb = rng.choice(int(larg_arr), replace=False)
             pygame.draw.rect(screen, (0, 0, 0), [nb*cellSize, gene*cellSize, cellSize, cellSize])
             cells[gene][nb] = 1
