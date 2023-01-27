@@ -4,13 +4,17 @@ Scratch implementation of cellular automata with neumann neighborhood and conway
 ## Requirements
 
 The requirements are:
+   
         - numpy
+        
         - pygame
 
 ## Von neumann neighborhood
 
 Implementation of Von Neumann neighborhood with simple rules:
+
         - if only one cell is alive change current to alive
+
         - otherwise change to dead
 
 To run the Von Neumann neighborhood with those rules use the following command:
