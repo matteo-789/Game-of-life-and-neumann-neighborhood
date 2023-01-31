@@ -27,6 +27,15 @@ To run the game of life use the following command:
 python3 main.py gol -x X
 ```
 
+## Chaos CA
+
+Implementation of CA with rdn neighbors (number can be set) with simple rules.
+
+To run the chaos CA use the following command:
+```
+python3 main.py chaos -x X -n N
+```
+
 ## Help
 
 For help use the following commands:
@@ -34,4 +43,5 @@ For help use the following commands:
 python3 main.py -h
 python3 main.py gol -h
 python3 main.py neumann -h
+python3 main.py chaos -h
 ```
